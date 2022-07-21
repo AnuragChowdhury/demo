@@ -192,7 +192,7 @@ st.title('Courses')
 # In[27]:
 
 
-final_df.to_csv('final_df.csv')
+final_df.to_csv('final_df.csv',index=False)
 
 
 # In[30]:
@@ -210,7 +210,7 @@ def load_data(nrows):
 data_load_state = st.text('Loading data...')
 data = load_data(4)
 data_load_state.text('Loading data...done!')
-final_df.drop("Unnamed:0",axis=0,inplace=True)
+#final_df.drop("Unnamed:0",axis=0,inplace=True)
 final_df
 
 
