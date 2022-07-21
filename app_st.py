@@ -200,7 +200,7 @@ final_df.to_csv('final_df.csv',index=False)
 
 @st.cache
 def load_data(nrows):
-    data = pd.read_csv('final_df.csv',nrows=nrows)
+    data = pd.read_csv('final_df.csv',nrows=nrows,index_col=False)
     return data
 
 
